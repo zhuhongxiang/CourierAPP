@@ -1,0 +1,231 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"> <!-- 垂直分布 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_cloud"><!--设置背景图片-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"><!-- 垂直分布 -->
+            <!-- 为下方的主要代码进行注释
+             android:layout_gravity="center_horizontal"设置控件水平居中分布
+             android:textColor="@color/text_white"设置文本颜色为colors.xml中text_white对应的颜色-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="YIDIYUAN"
+                android:textColor="@color/text_white"
+                android:textSize="30sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:text="您的快递助手"
+                android:textColor="@color/text_white"
+                android:textSize="14sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:text="-易递员-"
+                android:textColor="@color/text_white"
+                android:textSize="18sp" />
+            <!-- 为下方的主要代码进行注释
+             android:background="@drawable/cabinlogo"设置ImageView背景为drawable文件夹下的cabinlogo图片-->
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/cabinlogo" />
+        </LinearLayout>
+        <!-- 为下方的主要代码进行注释
+         android:layout_alignParentBottom="true"设置控件与父件底部对齐
+         android:background="@drawable/bolang"设置背景为drawable文件夹下的bolang图片-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bolang" />
+    </RelativeLayout>
+    <!-- 为下方的主要代码进行注释
+             android:textColor="@color/bg_login"设置文本颜色为colors.xml中bg_login对应的颜色-->
+    <LinearLayout
+        android:id="@+id/ll_login"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#f7f2eb"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal"> <!-- 水平分布 -->
+                <!-- 为下方的主要代码进行注释
+                android:layout_centerVertical="true"相对布局中设置控件垂直居中
+                android:background="@drawable/point1"设置背景为drawable文件夹下的point1图片-->
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/point1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="45dp"
+                    android:text="账 号"
+                    android:textColor="@color/text_black_2"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <!-- 为下方的主要代码进行注释
+                android:digits="0123456789"设置输入文本只能为0-9的数字
+                android:hint="请输入手机号"设置未输入文本时的提示信息
+                android:inputType="phone"设置输入类型为phone手机号
+                android:maxLength="11"设置输入文本最大长度为11位-->
+            <EditText
+                android:id="@+id/et_login_username"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="13dp"
+                android:background="@null"
+                android:digits="0123456789"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="8dp"
+                    android:layout_height="8dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/point1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="45dp"
+                    android:text="密 码"
+                    android:textColor="@color/text_black_2"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <!-- 为下方的主要代码进行注释
+                 android:hint="请输入密码"设置未输入文本时的提示信息
+                 android:password="true"以”.”形式显示文本-->
+            <EditText
+                android:id="@+id/et_login_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="13dp"
+                android:background="@null"
+                android:hint="请输入密码"
+                android:password="true"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="3dp"
+                android:background="@color/line" />
+        </LinearLayout>
+        <!-- 为下方的主要代码进行注释
+        android:layout_gravity="center_horizontal"绝对布局中设置控件水平居中
+        android:background="@drawable/btn_login"
+        将drawable文件夹下btn_login.xml设置的背景属性添加到Button控件中-->
+        <Button
+            android:id="@+id/btn_login_yes"
+            android:layout_width="250dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_login"
+            android:text="登录"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_marginTop="15dp">
+            <!-- 为下方的主要代码进行注释
+             android:layout_alignParentLeft="true"设置控件与父件左侧对齐-->
+            <Button
+                android:id="@+id/btn_login_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="35dp"
+                android:background="@android:color/transparent"
+                android:text="快速注册"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+            <!-- 为下方的主要代码进行注释
+             android:layout_alignParentRight="true"设置控件与父件右侧对齐-->
+            <Button
+                android:id="@+id/btn_login_resetpwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="35dp"
+                android:background="@android:color/transparent"
+                android:text="忘记密码"
+                android:textColor="@color/colorPrimary"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:text="如果您遇到任何问题，请与我们联系。\n联系电话:13261537575"
+            android:textColor="@color/text_black_2"/>
+    </LinearLayout>
+
+</LinearLayout>

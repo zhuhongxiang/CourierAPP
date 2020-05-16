@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="feedback">
+        <item>投诉反馈</item>
+        <item>丢件反馈</item>
+        <item>报修反馈</item>
+        <item>建议反馈</item>
+    </string-array>
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp">
+    <!-- 为下方的主要代码进行注释
+    android:layout_gravity="center_horizontal"设置控件水平居中
+    android:src="@drawable/cabinlogo"使用drawable文件夹中的cabinlogo图片作为当前使用的图片
+    android:paddingTop="20dp"设置控件内上边距为20dp-->
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/cabinlogo"
+        android:paddingTop="20dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="快件运单号："
+            android:gravity="center_horizontal"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tv_numberFinished"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="12345678"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="收件人手机号："
+            android:gravity="center_horizontal"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tv_phoneFinished"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="13001990655"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="柜体编号："
+            android:gravity="center_horizontal"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tv_cabinetNameFinished"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1500520"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="箱体编号："
+            android:gravity="center_horizontal"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/tv_cabinetNumberFinished"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="21"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:textColor="@color/colorPrimary"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="号"
+            android:gravity="center_horizontal"
+            android:textSize="20sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+    <!-- 为下方的主要代码进行注释
+     android:orientation="horizontal"设置内部控件水平分布
+     android:background="@drawable/btn_background"
+     设置背景为drawable文件夹下btn_background.xml文件格式
+     android:textColor="@color/text_black"
+     设置文本颜色为colors.xml文件中text_black对应的颜色-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
+        <Button
+            android:id="@+id/btn_deliveryCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="取消投递"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:textColor="@color/text_black" />
+        <Button
+            android:id="@+id/btn_deliverySure"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="完成投递"
+            android:textSize="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/text_black" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="包裹投递后请确保箱门完全关闭"
+        android:paddingTop="80dp"
+        android:paddingBottom="20dp"
+        android:gravity="center_horizontal"
+        android:textColor="@color/pressure_middle" />
+</LinearLayout>

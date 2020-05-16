@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#55c364</color>
+    <color name="colorPrimaryDark">#55c364</color>
+    <color name="colorAccent">#55c364</color>
+
+    <color name="fresh_1">#FFFFB3</color>
+    <color name="fresh_2">#94FF85</color>
+    <color name="fresh_3">#75FFC2</color>
+    <color name="fresh_4">#8FDEFF</color>
+    <color name="fresh_5">#B3B3FF</color>
+
+    <color name="mono_1">#042D42</color>
+    <color name="mono_2">#0B84C2</color>
+    <color name="mono_3">#075075</color>
+    <color name="mono_4">#57BEF2</color>
+    <color name="mono_5">#326E8C</color>
+
+    <color name="liberty_1">#CFF8F6</color>
+    <color name="liberty_2">#94D4D4</color>
+    <color name="liberty_3">#88B4BB</color>
+    <color name="liberty_4">#76AEAF</color>
+    <color name="liberty_5">#2A6D82</color>
+
+    <color name="colorful_1">#C12552</color>
+    <color name="colorful_2">#FF6600</color>
+    <color name="colorful_3">#F5C700</color>
+    <color name="colorful_4">#6A961F</color>
+    <color name="colorful_5">#008885</color>
+
+    <color name="greens_1">#55FC70</color>
+    <color name="greens_2">#62E24C</color>
+    <color name="greens_3">#ACF960</color>
+    <color name="greens_4">#CBE24C</color>
+    <color name="greens_5">#FCF355</color>
+
+    <color name="joyful_1">#D9508A</color>
+    <color name="joyful_2">#FE9507</color>
+    <color name="joyful_3">#FEF778</color>
+    <color name="joyful_4">#6AA786</color>
+    <color name="joyful_5">#35C2D1</color>
+    <!--Copy from MPChartLib, please not edit it manually-->
+    <eat-comment />
+
+    <!--Our configuration-->
+    <eat-comment />
+
+    <color name="bar_fill_color">#00a8ff</color>
+    <color name="measure_progress_bar_color">#00aeff</color>
+    <color name="measure_progress_rim_color">@android:color/white</color>
+
+    <color name="user_indicator_page_color">#FF000000</color>
+    <color name="user_indicator_fill_color">#FFFFFFFF</color>
+
+    <color name="normal_gray">#FFDFDFDF</color>
+    <color name="normal_white">#FFFFFFFF</color>
+    <color name="normal_green">#FF62CC74</color>
+    <color name="normal_red">#FFF96650</color>
+    <color name="normal_yellow">#FFFFCC00</color>
+    <color name="circle_background">@color/normal_white</color>
+
+    <color name="circle_title">@color/normal_gray</color>
+    <color name="circle_alert">@color/normal_gray</color>
+    <color name="circle_content">@color/normal_green</color>
+    <color name="circle_unit">@color/normal_green</color>
+
+    <color name="circle_gray">@color/normal_gray</color>
+    <color name="circle_green">@color/normal_green</color>
+    <color name="circle_yellow">@color/normal_yellow</color>
+    <color name="circle_red">@color/normal_red</color>
+    <color name="circle_white">@color/normal_white</color>
+
+    <color name="indicator_center">#FFD8D5D5</color>
+    <color name="indicator_light">#FFEFEFEF</color>
+    <color name="indicator_gray">@color/normal_gray</color>
+
+    <color name="line_alert_color">@color/normal_gray</color>
+    <color name="line_progress_background">@color/normal_gray</color>
+    <color name="line_progress_color">@color/normal_green</color>
+    <color name="line_indicator_text_color">@color/normal_white</color>
+    <color name="line_indicator_background">@color/normal_green</color>
+
+    <color name="main">#55c364</color>
+    <color name="title_white">#FFF8F8F9</color>
+    <color name="bg_white">#FAFAFA</color>
+    <color name="text_black">#333333</color>
+    <color name="text_red">#da3e3e</color>
+    <color name="text_black_1">#666666</color>
+    <color name="text_black_2">#576272</color>
+    <color name="text_white">#FCFDFD</color>
+    <color name="text_green">#a269af73</color>
+    <color name="line">#bfbfbf</color>
+    <color name="bg_login">#f8f5f1</color>
+
+    <color name="bg_green">#164a33</color>
+    <color name="line_green">#ACD378</color>
+    <color name="progress_green">#C9DD7B</color>
+
+    <color name="pressure_low">#CDE17A</color>
+    <color name="pressure_middle">#69AF73</color>
+    <color name="pressure_high">#3D6743</color>
+
+    <color name="column_chart_green">#9770a975</color>
+    <color name="linear_chart_green">#60c76e</color>
+    <color name="history_time_type_text_green">#6ccb79</color>
+    <color name="history_time_type_text_gray">#6ccb79</color>
+    <color name="history_measure_type_text">#55c364</color>
+
+    <color name="history_data_high">#d9a67260</color>
+    <color name="history_data_middle">#d970a975</color>
+    <color name="history_data_low">#55c364</color>
+    <color name="history_data_text_gray">#999999</color>
+
+
+    <color name="test">#b3b3b3</color>
+</resources>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 头像区域 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="335dp"
+        android:background="@drawable/user_bg">
+
+        <TextView
+            android:id="@+id/id_greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:text="Good Morning!"
+            android:textColor="@color/bg_white"
+            android:textSize="28sp"/>
+
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/id_greeting"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dp"
+            android:text="name"
+            android:textColor="@color/bg_white"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/line"/>
+    <RelativeLayout
+        android:id="@+id/rl_myinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_white">
+
+        <ImageView
+            android:id="@+id/iv_appoint"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/user_msg" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/iv_appoint"
+            android:text="我的信息"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_next" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+    <!-- 我的收藏 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/line"/>
+    <RelativeLayout
+        android:id="@+id/rl_history"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/bg_white">
+
+        <ImageView
+            android:id="@+id/iv_collects"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/user_history" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/iv_collects"
+            android:text="投递记录"
+            android:textSize="16sp"
+            android:textColor="@color/text_black"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_next" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/line"/>
+    <!--退出登录-->
+    <RelativeLayout
+        android:id="@+id/rl_quit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/bg_white">
+
+        <ImageView
+            android:id="@+id/iv_quit"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/user_quit" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_toRightOf="@id/iv_quit"
+            android:text="退出登录"
+            android:textColor="@color/text_black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/ic_next" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line"/>
+
+</LinearLayout>

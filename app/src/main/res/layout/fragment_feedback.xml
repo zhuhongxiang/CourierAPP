@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/indicator_light"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#55c364"
+        android:gravity="center" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="22sp"
+            android:textColor="@android:color/white"
+            android:text="反馈服务"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border">
+    <Spinner
+        android:id="@+id/spin_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:prompt="@string/feedback"
+        android:entries="@array/feedback"
+        android:spinnerMode="dialog" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/border"
+        android:orientation="vertical" >
+    <EditText
+        android:id="@+id/et_backmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="@string/backmsg"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textSize="16sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_background"
+        android:textSize="18sp"
+        android:focusable="false"
+        android:textColor="@android:color/black"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="20dp"
+        android:text="提交反馈"/>
+</LinearLayout>

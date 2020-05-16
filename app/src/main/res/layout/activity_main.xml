@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <!-- 为下方的主要代码进行注释
+       android:clickable="true"设置控件可点击
+       android:padding="5dp"设置内边距为5dp
+       app:av_tabIconNormal="@mipmap/tab1_unpress"设置控件正常状态时为mipmap文件夹下的tab1_unpress图片
+       app:av_tabIconSelected="@mipmap/tab1_press"设置控件选中状态时为mipmap文件夹下的tab1_press图片
+       app:av_textColorNormal="#999999"设置控件正常状态的颜色为#999999
+       app:av_textColorSelected="#46c01b"设置控件选中状态的颜色为#46c01b-->
+    <com.example.courierapp.utils.AlphaIndicator
+        android:id="@+id/alphaIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <com.example.courierapp.utils.AlphaView
+            android:id="@+id/av_tab1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp"
+            app:av_tabIconNormal="@mipmap/tab1_unpress"
+            app:av_tabIconSelected="@mipmap/tab1_press"
+            app:av_tabText="首页"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#55c364" />
+
+        <com.example.courierapp.utils.AlphaView
+            android:id="@+id/av_tab2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp"
+            app:av_tabIconNormal="@mipmap/tab2_unpress"
+            app:av_tabIconSelected="@mipmap/tab2_press"
+            app:av_tabText="投件"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#55c364" />
+
+        <com.example.courierapp.utils.AlphaView
+            android:id="@+id/av_tab3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp"
+            app:av_tabIconNormal="@mipmap/tab3_unpress"
+            app:av_tabIconSelected="@mipmap/tab3_press"
+            app:av_tabText="揽件"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#55c364" />
+
+        <com.example.courierapp.utils.AlphaView
+            android:id="@+id/av_tab4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp"
+            app:av_tabIconNormal="@mipmap/tab4_unpress"
+            app:av_tabIconSelected="@mipmap/tab4_press"
+            app:av_tabText="反馈"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#55c364" />
+
+        <com.example.courierapp.utils.AlphaView
+            android:id="@+id/av_tab5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:padding="5dp"
+            app:av_tabIconNormal="@mipmap/tab5_unpress"
+            app:av_tabIconSelected="@mipmap/tab5_press"
+            app:av_tabText="我的"
+            app:av_tabTextSize="14sp"
+            app:av_textColorNormal="#999999"
+            app:av_textColorSelected="#55c364" />
+    </com.example.courierapp.utils.AlphaIndicator>
+</LinearLayout>
